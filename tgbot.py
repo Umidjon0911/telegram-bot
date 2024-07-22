@@ -26,7 +26,7 @@ async def CommandStart(message: types.Message):
     full_name = message.from_user.full_name
     url = message.from_user.url
     user_id = message.from_user.id
-    await message.reply(f"Assalomu alaykum \n<a href='{url}'>{first_name}</a>", reply_markup=menyu)
+    await message.reply(f"Assalom alaykum \n<a href='{url}'>{first_name}</a>", reply_markup=menyu)
     for i in Admins:
         if i != user_id:
             await bot.send_message(chat_id=i,text= f" 👉<a href='{url}'>{first_name}</a>👈 Start  bosdi")
